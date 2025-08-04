@@ -1,7 +1,7 @@
 let now = new Date();
-let birthday = new Date(`${now.getFullYear()}-05-04T00:00:00`);
+let birthday = new Date(`${now.getFullYear()}-11-04T00:00:00`);
 if (now > birthday) {
-  birthday = new Date(`${now.getFullYear() + 1}-05-04T00:00:00`);
+  birthday = new Date(`${now.getFullYear() + 1}-11-04T00:00:00`);
 }
 function updateCountdown() {
   const now = new Date();
@@ -22,3 +22,4 @@ function updateCountdown() {
 }
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
