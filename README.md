@@ -14,5 +14,6 @@
       <span id="seconds">00</span> Seconds
     </div>
   </div>
+  <script src="birthday.js"></script>
 </body>
 </html>
