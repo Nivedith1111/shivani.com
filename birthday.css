@@ -32,7 +32,7 @@ body::before {
 }
 
 @keyframes slideshow {
-  0%   { background-image: url("shivani1.jpg"); }
+  0%   { background-image: url("shivani.jpg"); }
   20%  { background-image: url("shivani2.jpg"); }
   40%  { background-image: url("shivani3.jpg"); }
   60%  { background-image: url("shivani4.jpg"); }
@@ -111,6 +111,7 @@ h1 {
   font-size: 2rem;
   margin: 0 10px;
 }
+
 
 
 
