@@ -37,7 +37,7 @@ body::before {
   40%  { background-image: url("image/shivani3.jpg"); }
   60%  { background-image: url("image/shivani4.jpg"); }
   80%  { background-image: url("image/shivani5.jpg"); }
-  100% { background-image: url("image/shivani1.jpg"); }
+  100% { background-image: url("image/shivani.jpg"); }
 }
 
 .container {
@@ -111,4 +111,5 @@ h1 {
   font-size: 2rem;
   margin: 0 10px;
 }
+
 
