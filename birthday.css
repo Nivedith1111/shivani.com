@@ -32,12 +32,12 @@ body::before {
 }
 
 @keyframes slideshow {
-  0%   { background-image: url("image/shivani1.jpg"); }
-  20%  { background-image: url("image/shivani2.jpg"); }
-  40%  { background-image: url("image/shivani3.jpg"); }
-  60%  { background-image: url("image/shivani4.jpg"); }
-  80%  { background-image: url("image/shivani5.jpg"); }
-  100% { background-image: url("image/shivani.jpg"); }
+  0%   { background-image: url("shivani1.jpg"); }
+  20%  { background-image: url("shivani2.jpg"); }
+  40%  { background-image: url("shivani3.jpg"); }
+  60%  { background-image: url("shivani4.jpg"); }
+  80%  { background-image: url("shivani5.jpg"); }
+  100% { background-image: url("shivani.jpg"); }
 }
 
 .container {
@@ -111,5 +111,6 @@ h1 {
   font-size: 2rem;
   margin: 0 10px;
 }
+
 
 
