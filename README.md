@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="birthday.css" />
+  <title>Happy Birthday Shivani</title>
+  <link rel="stylesheet" href="birthday.css">
 </head>
 <body>
   <div class="container">
