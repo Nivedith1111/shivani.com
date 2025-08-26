@@ -3,24 +3,50 @@ let birthday = new Date(`${now.getFullYear()}-05-04T00:00:00`);
 if (now > birthday) {
   birthday = new Date(`${now.getFullYear() + 1}-05-04T00:00:00`);
 }
+
 function updateCountdown() {
   const now = new Date();
   const diff = birthday - now;
   if (diff <= 0) {
     document.getElementById("countdown").innerText = "🎉 It's Shivani's Birthday!";
     document.getElementById("timer").style.display = "none";
+
+    startCelebration();
     return;
   }
+
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
   const minutes = Math.floor((diff / (1000 * 60)) % 60);
   const seconds = Math.floor((diff / 1000) % 60);
+
   document.getElementById("days").innerText = String(days).padStart(2, "0");
   document.getElementById("hours").innerText = String(hours).padStart(2, "0");
   document.getElementById("minutes").innerText = String(minutes).padStart(2, "0");
   document.getElementById("seconds").innerText = String(seconds).padStart(2, "0");
 }
+
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
+/* 🎈 Balloons + 🎊 Confetti on birthday */
+function startCelebration() {
+  setInterval(() => {
+    const balloon = document.createElement("div");
+    balloon.className = "balloon";
+    balloon.style.left = Math.random() * window.innerWidth + "px";
+    balloon.style.background = `hsl(${Math.random() * 360}, 80%, 60%)`;
+    document.body.appendChild(balloon);
+    setTimeout(() => balloon.remove(), 7000);
+  }, 500);
 
+  setInterval(() => {
+    const confetti = document.createElement("div");
+    confetti.className = "confetti";
+    confetti.style.left = Math.random() * window.innerWidth + "px";
+    confetti.style.background = `hsl(${Math.random() * 360}, 90%, 50%)`;
+    confetti.style.animationDuration = (Math.random() * 3 + 2) + "s";
+    document.body.appendChild(confetti);
+    setTimeout(() => confetti.remove(), 5000);
+  }, 200);
+}
